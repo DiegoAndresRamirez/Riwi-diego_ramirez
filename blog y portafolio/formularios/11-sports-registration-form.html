@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro deportivo</title>
+    <link href="estilos.css" rel="stylesheet">
+    <style>
+        header {background-color: antiquewhite;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Registro deportivo</h1>
+    </header>
+    <form>
+        <label for="nombre">Nombre del deportista:</label>
+        <input type="text" name="nombre" required><br>
+        <label for="apellido">Apellido del deportista:</label>
+        <input type="text" name="apellido" required><br>
+        <label for="email">Correo Electrónico del deportista:</label>
+        <input type="email" name="email" required><br>
+        <label for="fecha_nacimiento">Fecha de nacimiento del deportista:</label>
+        <input type="date" name="fecha_nacimiento" required><br>
+        <label for="genero">Sexo del deportista:</label><br>
+        <label for="genero">Masculino</label><br>
+        <input type="radio" name="genero" value="male"><br>
+        <label for="genero">Femenina</label><br>
+        <input type="radio" name="genero" value="female"><br>
+        <label for="genero">Otro</label><br>
+        <input type="radio" name="genero" value="other"><br>
+        <label for="paises">País de origen del deportista:</label><br>
+        <select name="paises" required>
+            <option value="" selected disabled>Elige un Pais:</option>
+            <option value="1">Estados Unidos</option>
+            <option value="2">Canadá</option>
+            <option value="3">México</option>
+            <option value="4">Colombia</option>
+            <option value="5">Brasil</option>
+            <option value="6">Argentina</option>
+            <option value="7">Reino Unido</option>
+            <option value="8">Francia</option>
+            <option value="9">Alemania</option>
+            <option value="10">España</option>
+            <option value="11">Italia</option>
+            <option value="12">China</option>
+            <option value="13">Japón</option>
+            <option value="14">India</option>
+            <option value="15">Australia</option>
+            <option value="16">Sudáfrica</option>
+            <option value="17">Nigeria</option>
+            <option value="18">Egipto</option>
+            <option value="19">Rusia</option>
+            <option value="20">Turquía</option>
+        </select><br>
+        <label for="ciudades">Ciudad de origen del deportista:</label><br>
+        <select name="ciudades" required>
+            <option value="" selected disabled>Elige una Ciudad:</option>
+            <option value="1">Washington D.C.</option>
+            <option value="2">Ottawa</option>
+            <option value="3">Ciudad de México</option>
+            <option value="4">Medellin</option>
+            <option value="5">Brasilia</option>
+            <option value="6">Buenos Aires</option>
+            <option value="7">Londres</option>
+            <option value="8">París</option>
+            <option value="9">Berlín</option>
+            <option value="10">Madrid</option>
+            <option value="11">Roma</option>
+            <option value="12">Pekín (Beijing)</option>
+            <option value="13">Tokio</option>
+            <option value="14">Nueva Delhi</option>
+            <option value="15">Canberra</option>
+            <option value="16">Ciudad del Cabo (legislativa)</option>
+            <option value="17">Abuya</option>
+            <option value="18">El Cairo</option>
+            <option value="19">Moscú</option>
+            <option value="20">Ankara</option>
+        </select><br>
+        <label for="codigo_postal">Código postal del deportista:</label><br>
+        <input type="number" required min="1" max="1000"><br>
+        <label for="deporte">Deporte que practica:</label>
+        <input type="text" name="deporte" required><br>
+        <label for="nivel">Nivel de experiencia:</label><br>
+        <input type="range" name="nivel" min="1" max="11" required><br>
+        <label for="notificaciones">¿Desea recibir notificaciones?:</label>
+        <input type="checkbox" name="notificaciones"><br>
+        <label for="promos">¿Desea recibir promociones?:</label>
+        <input type="checkbox" name="promos"><br>
+        <input type="submit" value="enviar">
+
+
+
+
+
+    </form>
+</body>
+</html>

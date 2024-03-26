@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTO</title>
+    <link href="estilos.css" rel="stylesheet" >
+    <style>
+        header {background-color: aquamarine;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulario de busqueda de productos</h1>
+    </header>
+    <form>
+         <label for="nombre">Nombre del producto:</label><br>
+         <input type="text" name="nombre" required><br>
+         <label for="filtro">Filtro por Categoría:</label><br>
+         <label>Electrodomesticos</label>
+         <input type="checkbox" name="categoria" value="electrodomesticos" required><br>
+         <label>Cocina</label>
+         <input type="checkbox" name="categoria" value="cocina" required><br>
+         <label>Tecnologia</label>
+         <input type="checkbox" name="categoria" value="tecnologia" required><br>
+         <label for="minimo">Precio mínimo:</label>
+         <input type="number" name="minimo" required><br>
+         <label for="maximo">Precio maximo:</label>
+         <input type="number" name="maximo" required><br>
+         <label for="fecha_publi">Fecha de publicación del producto:</label>
+         <input type="date" name="fecha_publi" required><br>
+         <label for="fecha_venci">Fecha de vencimiento:</label>
+         <input type="date" name="fecha_venci" required><br>
+         <label for="notificaciones">¿Desea recibir notificaciones?:</label>
+         <input type="checkbox" required name="notificaciones"><br>
+         <label for="numero_prod">Resultados por página:</label>
+         <input type="number" name="numero_prod" required min="10" max="999"><br>
+         <input type="submit" value="enviar">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de preferencias musicales</title>
+    <link href="estilos.css" rel="stylesheet">
+    <style>
+        header {background-color: antiquewhite;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Encuesta de preferencias musicales</h1>
+    </header>
+    <form>
+        <label for="nombre">Nombre del encuestado:</label>
+        <input type="text" name="nombre" required><br>
+        <label for="email">Correo Electrónico del encuestado:</label>
+        <input type="email" name="email" required><br>
+        <label for="edad">Edad del encuestado:</label>
+        <input type="number" name="edad" required min="18" max="80"><br>
+        <label for="genero">Sexo del encuestado:</label><br>
+        <label for="genero">Masculino</label><br>
+        <input type="radio" name="genero"  value="male"><br>
+        <label for="genero">Femenina</label><br>
+        <input type="radio" name="genero"  value="female"><br>
+        <label for="genero">Otros</label><br>
+        <input type="radio" name="genero"  value="other"><br>
+        <label for="musica_fav">¿Cuál es su género musical favorito?:</label><br>
+        <select name="musica_fav" required>
+            <option value="" selected disabled>Elige una genero musical:</option>
+            <option value="1">Baladas</option>
+            <option value="2">Opera</option>
+            <option value="3">Rock</option>
+            <option value="4">Soul</option>
+            <option value="5">Jazz</option>
+        </select><br>
+        <label for="artista_fav">¿Cuál es su artista favorito?:</label><br>
+        <select name="musica_fav" required>
+            <option value="" selected disabled>Elige un artista:</option>
+            <option value="1">Vicente Fernandez</option>
+            <option value="2">Freddie Mercury</option>
+            <option value="3">Romeo Santos</option>
+            <option value="4">Luciano Pavarotti</option>
+            <option value="5">Michael Jackson</option>
+        </select><br>
+        <label for="cancion_fav">¿Cuál es su cancion favorita?:</label><br>
+        <select name="musica_fav" required>
+            <option value="" selected disabled>Elige una cancion:</option>
+            <option value="1">Bohemian Rhapsody - Queen</option>
+            <option value="2">Idilio - Willie Colon</option>
+            <option value="3">Maggie May - Rod Steward</option>
+            <option value="4">Vesti la Giubba - Luciano Pavarotti</option>
+            <option value="5">Marta - Ricardo Arjona</option>
+        </select><br>
+        <label for="instrumento_fav">¿Cuál es su instrumento favorito?:</label><br>
+        <select name="musica_fav" required>
+            <option value="" selected disabled>Elige un instrumento musical:</option>
+            <option value="1">Arpa</option>
+            <option value="2">Bajo</option>
+            <option value="3">Piano</option>
+            <option value="4">Violin</option>
+            <option value="5">Guitarra acustica</option>
+        </select><br>
+        <label for="notificaciones">¿Desea recibir notificaciones?:</label>
+        <input type="checkbox" name="notificaciones"><br>
+        <label for="promos">¿Desea recibir promociones?:</label>
+        <input type="checkbox" name="promos"><br>
+        <input type="submit" value="enviar">
+
+
+
+
+
+
+    </form>
+</body>
+</html>

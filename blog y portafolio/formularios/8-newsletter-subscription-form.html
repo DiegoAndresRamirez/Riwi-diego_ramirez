@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripción a newsletter</title>
+    <link href="estilos.css" rel="stylesheet">
+    <style>
+        header {background-color: antiquewhite;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Suscripción a newsletter</h1>
+    </header>
+    <form>
+        <label for="nombre">Nombre del cliente:</label>
+        <input type="text" name="nombre" required><br>
+        <label>Género:</label><br>
+        <label for="genero">Masculino</label>
+        <input type="radio" name="genero" value="male"><br>
+        <label for="genero">Femenino</label>
+        <input type="radio" name="genero" value="female"><br>
+        <label for="genero">Otro</label>
+        <input type="radio" name="genero" value="other"><br>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" name="email" required><br>
+        <label for="intereses">Intereses:</label>
+        <select name="intereses" required>
+            <option value="" selected disabled>elige una opcion</option>
+            <option value="1">Entretenimiento</option>
+            <option value="2">Cine</option>
+            <option value="3">Musica</option>
+            <option value="4">Videojuegos</option>
+        </select><br>
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" name="fecha" required><br>
+        <label for="genero">Sexo:</label><br>
+        <label for="genero">Masculino</label><br>
+        <input type="radio" name="genero" value="male"><br>
+        <label for="genero">Femenina</label><br>
+        <input type="radio" name="genero" value="female"><br>
+        <label for="genero">Other</label><br>
+        <input type="radio" name="genero" value="other"><br>   
+        <label for="notificaciones">¿Desea recibir notificaciones?:</label>
+        <input type="checkbox" name="notificaciones"><br>
+        <label for="promos">¿Desea recibir promociones?:</label> 
+        <input type="checkbox" name="promos"><br>
+        <input type="submit" value="suscribirse">
+    </form>
+</body>
+</html>

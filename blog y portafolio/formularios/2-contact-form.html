@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTS</title>
+    <link href="estilos.css" rel="stylesheet">
+    <style>
+        header {background-color: aquamarine;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CONTACTOS</h1>
+    </header>
+
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" required maxlength="50" name="nombre"><br>
+        <label for="telefono">Telefono:</label>
+        <input type="tel" required pattern="[0-9]{10}" name="telefono"><br>
+        <label for="email">Email:</label>
+        <input type="email" required name="email"><br>
+        <label for="asunto">asunto: </label>
+        <select required name="asunto">
+            <option value="" selected disabled>Elige una opcion:</option>
+            <option value="1">TRABAJO</option>
+            <option value="2">HOGAR</option>
+            <option value="3">PASAPORTE</option>
+            <option value="4">TRANSPORTE</option>
+        </select><br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea required maxlength="500" cols="30" rows="10" name="mensaje"></textarea><br>
+        <label for="aceptar">Aceptar terminos y condiciones:</label>
+        <input type="checkbox" required name="aceptar"><br>
+        <label for="archivo">Adjuntar CV:</label>
+        <input type="file" required name="archivo"><br>
+        <label for="fecha">Fecha de disponibilidad: </label>
+        <input type="date" required name="fecha"><br>
+        <input type="submit">
+
+    </form>
+    
+</body>
+</html>

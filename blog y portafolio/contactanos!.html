@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacnanos</title>
+    <link rel="stylesheet" href="estilos.css">          
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="MULTIMEDIA\cocodrile.png" alt="Logo">
+            </div>
+            <label  class="label_hamburguesa" for="menu_hamburguesa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list_icon" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+            </label>
+            <input  class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+            <ul class="ul_links">
+                <li class="li_links">
+                    <a href="blog.html" class="link" target="_blank">Blog</a>
+                </li>
+                <li class="li_links">
+                    <a href="news.html" class="link" target="_blank">News</a>
+                </li>
+                <li class="li_links">
+                    <a href="about-us.html" class="link" target="_blank">About Us</a>
+                </li>
+                <li class="li_links">
+                    <a href="portafolio.html" class="link" target="_blank">Portafolio</a>
+                </li>
+                <li class="li_links">
+                    <a href="#" class="link" >Contactos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box-title">
+        <h1 class="title">Nuestros Contactos</h1>
+    </div>
+    <hr>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Ingrese sus Datos</legend>
+                <label for="nombre">Ingresa tu nombre:</label>
+                <input type="text" required maxlength="50" name="nombre"><br>
+                <label for="email">Ingresa tu email:</label>
+                <input type="email" required name="email"><br>
+                <label for="asunto">Asunto:</label><br>
+                <select name="asunto" required name="asunto">
+                    <option value="" selected disabled>Elige una asunto:</option>
+                    <option value="1">TRABAJO</option>
+                    <option value="2">COMPRA</option>
+                    <option value="3">OFERTA</option>
+                    <option value="4">CONTACTO</option>
+                    <option value="5">NEGOCIO</option>
+                </select><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea required  cols="30" rows="10"  maxlength="500" name="mensaje"></textarea><br>
+                <label for="terminos_condiciones">Aceptar términos y condiciones:</label>
+                <input type="checkbox" name="terminos_condiciones" required name="terminos_condiciones"><br>
+                <input type="submit" value="enviar">
+            </fieldset>
+        </form><br>
+    </main>
+    <section class="footer-box">
+        <footer class="footer-list">
+            <h3 class="footer-title">REDES SOCIALES: </h3>
+            <ul class="footer-links">
+                <li class="centered_list"><img src="https://www.freeiconspng.com/uploads/vector-logos-high-resolution-logos-logo-designs-facebook-icon-vector-6.png" width="20"><a href="https://www.facebook.com/" target="_blank" > Facebook</a></li>
+                <li class="centered_list"><img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo-6.png" width="20"><a href="https://www.instagram.com/" target="_blank" > Instagram</a></li>
+                <li class="centered_list"><img src="https://th.bing.com/th/id/R.d484aaeed32599dca4decfb012020c82?rik=u2OqHrxVMK%2bRFA&pid=ImgRaw&r=0" width="20"><a href="https://www.twitter.com/" target="_blank" > Twitter</a></li>
+                <li class="centered_list"><img src="https://th.bing.com/th/id/OIP.vSJVKskZPiYuQUMJypfEzgHaHa?rs=1&pid=ImgDetMain" width="20"><a href="https://www.reddit.com/" target="_blank" > Reddit</a></li>
+            </ul>
+        </footer>
+    </section>
+    <hr><br>
+    <a href="#" class="_flotante">↑</a>
+    <section class="footer-box">
+        <footer class="footer-list">
+            <h3 class="footer-title">REDES SOCIALES: </h3>
+            <ul class="footer-links">
+                <li class="centered_list"><img src="https://www.freeiconspng.com/uploads/vector-logos-high-resolution-logos-logo-designs-facebook-icon-vector-6.png" width="20"><a href="https://www.facebook.com/" target="_blank" > Facebook</a></li>
+                <li class="centered_list"><img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo-6.png" width="20"><a href="https://www.instagram.com/" target="_blank" > Instagram</a></li>
+                <li class="centered_list"><img src="https://th.bing.com/th/id/R.d484aaeed32599dca4decfb012020c82?rik=u2OqHrxVMK%2bRFA&pid=ImgRaw&r=0" width="20"><a href="https://www.twitter.com/" target="_blank" > Twitter</a></li>
+                <li class="centered_list"><img src="https://th.bing.com/th/id/OIP.vSJVKskZPiYuQUMJypfEzgHaHa?rs=1&pid=ImgDetMain" width="20"><a href="https://www.reddit.com/" target="_blank" > Reddit</a></li>
+                <li class="centered_list"><p>Correo Electronico: correo@gmail.com</p></li>
+                <p class="centered">© [2024] [Diego Ramirez]. Todos los derechos reservados.</p>
+            </ul>
+        </footer>
+    </section>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO</title>
+    <link href="estilos.css" rel="stylesheet">
+    <style>
+        header {background-color: aquamarine;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Registro de usuario</h1>
+    </header>
+    <form>
+        <label for="name">Nombre:</label>
+        <input type="text" required maxlength="50" name="nombre"><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" required maxlength="50" name="apellido"><br>
+        <label for="email">Email:</label>
+        <input type="email" required name="email"><br>
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" required minlength="8" name="contraseña"><br>
+        <label for="foto_perfil">Foto de Perfil:</label>
+        <input type="file" name="foto_perfil"><br>
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" required name="fecha_nacimiento"><br>
+        <label>Sexo:</label><br>
+        <label for="genero">Masculino</label>
+        <input type="radio" name="genero" value="male" required><br>
+        <label for="genero">Femenina</label>
+        <input type="radio" name="genero" value="female" required><br>
+        <label for="genero">Otro</label>
+        <input type="radio" name="genero" value="other" required><br>
+        <label for="paises">Pais:</label><br>
+        <select name="paises" required>
+            <option value="" selected disabled>Elige un Pais:</option>
+            <option value="1">Estados Unidos</option>
+            <option value="2">Canadá</option>
+            <option value="3">México</option>
+            <option value="4">Colombia</option>
+            <option value="5">Brasil</option>
+            <option value="6">Argentina</option>
+            <option value="7">Reino Unido</option>
+            <option value="8">Francia</option>
+            <option value="9">Alemania</option>
+            <option value="10">España</option>
+            <option value="11">Italia</option>
+            <option value="12">China</option>
+            <option value="13">Japón</option>
+            <option value="14">India</option>
+            <option value="15">Australia</option>
+            <option value="16">Sudáfrica</option>
+            <option value="17">Nigeria</option>
+            <option value="18">Egipto</option>
+            <option value="19">Rusia</option>
+            <option value="20">Turquía</option>
+        </select><br>
+        <label for="ciudades">Ciudad:</label><br>
+        <select name="ciudades" required>
+            <option value="" selected disabled>Elige una Ciudad:</option>
+            <option value="1">Washington D.C.</option>
+            <option value="2">Ottawa</option>
+            <option value="3">Ciudad de México</option>
+            <option value="4">Medellin</option>
+            <option value="5">Brasilia</option>
+            <option value="6">Buenos Aires</option>
+            <option value="7">Londres</option>
+            <option value="8">París</option>
+            <option value="9">Berlín</option>
+            <option value="10">Madrid</option>
+            <option value="11">Roma</option>
+            <option value="12">Pekín (Beijing)</option>
+            <option value="13">Tokio</option>
+            <option value="14">Nueva Delhi</option>
+            <option value="15">Canberra</option>
+            <option value="16">Ciudad del Cabo (legislativa)</option>
+            <option value="17">Abuya</option>
+            <option value="18">El Cairo</option>
+            <option value="19">Moscú</option>
+            <option value="20">Ankara</option>
+        </select><br>
+        <label for="codigo_postal">Codigo Postal:</label><br>
+        <input type="number" required><br>
+        <label for="biografia">Biografia:</label><br>
+        <textarea required maxlength="500" cols="30" rows="10" name="biografia"></textarea><br>
+        <label for="aceptar">Aceptar terminos y condiciones:</label><br>
+        <input type="checkbox" required name="aceptar"><br>
+        <input type="submit">
+        
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>

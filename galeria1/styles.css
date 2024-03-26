@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+    .bellota-text-bold {
+        font-family: "Bellota Text", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 10px;
+    width: 90%;
+}
+.item{
+    padding: 1px;
+}
+.item img{
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    overflow: hidden;
+    transition: transform 0.3s, opacity 0.3s;
+}
+.item img:hover{
+    transform: scale(1.05);
+    opacity: 0.8 ;
+    cursor: pointer;
+}
+.title{
+    font-size: 50px;
+    text-align: center;
+}
+.parrafo{
+    font-size: 30px;
+    text-align: center;
+}
+
+@media (min-width: 769px) and (max-width: 1199px){
+    .container{
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 10px;
+       
+    
+}
+}
+@media (min-width: 601px) and (max-width: 768px){
+    .container{
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 10px;
+
+    }
+    
+}
+
+@media (max-width: 600px){
+    .container{
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 10px;
+    }
+    
+}

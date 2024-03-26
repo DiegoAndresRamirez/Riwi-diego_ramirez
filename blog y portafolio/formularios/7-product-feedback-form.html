@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback de producto</title>
+    <link href="estilos.css" rel="stylesheet">
+    <style>
+        header {background-color: antiquewhite;}
+    </style> 
+</head>
+<body>
+    <header>
+        <h1>Feedback de producto</h1>
+    </header>
+    <form>
+        <label for="nombre">Nombre del cliente:</label>
+        <input type="text" name="nombre" required><br>
+        <label for="email">Correo Electrónico del cliente:</label>
+        <input type="email" name="email" required><br>
+        <label for="fecha">Fecha de compra:</label>
+        <input type="date" name="fecha" required><br>
+        <label for="calificacion">Calificación del producto:</label>
+        <input type="range" required min="1" max="5" name="calificacion"><br>
+        <label for="recomendacion">¿Recomendaría el producto?:</label><br>
+        <input type="checkbox" name="recomendacion" required><br>
+        <label for="gusto">¿Qué le gustó del producto?:</label><br>
+        <textarea name="gusto"cols="30" rows="10" required></textarea><br>
+        <label for="mejoras">¿Qué le gustaría que mejoráramos?:</label><br>
+        <textarea name="mejoras"cols="30" rows="10" required></textarea><br>
+        <input type="submit" value="enviar">
+    </form>
+    
+</body>
+</html>

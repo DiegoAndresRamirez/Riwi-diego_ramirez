@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<hea>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="estilos.css" rel="stylesheet">
+    <style>
+        header {background-color: mintcream;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>formulario de satisfaccion</h1>
+    </header>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" required maxlength="50" name="nombre"><br>
+        <label for="email">Email:</label>
+        <input type="email" required name="email"><br>
+        <label for="edad">Edad:</label>
+        <input type="number" required min="18" max="99" name="edad"><br>
+        <label>Sexo:</label><br>
+        <input type="radio" name="genero" value="masculino">
+        <label>Masculino</label><br>
+        <input type="radio" name="genero" value="femenino">
+        <label>Femenino</label><br>
+        <input type="radio" name="genero" value="otro">
+        <label>Otro</label><br>
+        <label for="fecha_uso">Fecha de uso del servicio:</label>
+        <input type="date" required name="fecha_uso"><br>
+        <label for="calificacion">¿Cómo calificaría nuestro servicio?:</label><br>
+        <input type="range" required min="1" max="5" name="calificacion"><br>
+        <label for="recomendacion">¿Recomendaría nuestro servicio?:</label><br>
+        <input type="checkbox" required name="recomendacion"><br>
+        <label for="mejoras">¿Qué le gustaría que mejoráramos?:</label><br>
+        <textarea required maxlength="500" cols="30" rows="10" name="mejoras"></textarea><br>
+        <label for="gustos">¿Qué le gustó de nuestro servicio?:</label><br>
+        <textarea required maxlength="500" cols="30" rows="10" name="gustos"></textarea><br>
+        <input type="submit">
+    </form>
+    
+</body>
+</html>
